@@ -1,5 +1,5 @@
 {
-  "name": "adminis-construction",
+  "name": "van-life",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -11,7 +11,7 @@
     "preview": "vite preview",
     "prepare": "husky install",
     "predeploy": "npm run build", 
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "gh-pages": "^6.0.0",
