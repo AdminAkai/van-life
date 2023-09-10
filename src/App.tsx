@@ -4,6 +4,7 @@ import { ThemeProvider } from 'styled-components'
 import Landing from 'src/containers/Landing'
 import About from 'src/containers/About'
 import Navbar from 'src/containers/Navbar'
+import Footer from 'src/containers/Footer'
 
 import 'src/assets/fonts/Inter/static/stylesheet.css'
 
@@ -20,6 +21,7 @@ function App() {
           <Route path="/" element={<Landing />} />
           <Route path="/about" element={<About />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </ThemeProvider>
   )

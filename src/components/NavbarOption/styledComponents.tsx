@@ -6,4 +6,9 @@ export const CustomLink = styled(Link)`
   text-decoration: none;
   margin-left: 16px;
   color: ${({ theme }) => theme.text.gray};
+  text-align: right;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22.923px;
 `

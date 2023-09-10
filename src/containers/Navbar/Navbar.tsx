@@ -1,11 +1,11 @@
 import { FC } from 'react'
 
-import VanLifeLogo from 'src/assets/images/logog.png'
+import VanLifeLogo from 'src/assets/images/van-life-logo.png'
 
 import NavbarOption from 'src/components/NavbarOption'
 
-import { NavbarContainer, Logo, NavbarOptions } from './styledComponents'
 import { allNavbarOptions } from './lib'
+import { NavbarContainer, Logo, NavbarOptions } from './styledComponents'
 
 const Navbar: FC = () => {
   return (
