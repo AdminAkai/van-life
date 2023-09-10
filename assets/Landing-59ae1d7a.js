@@ -1,23 +1,25 @@
-import{s as n,j as e}from"./index-edd046a0.js";const o="/assets/mountain-backdrop-9368d073.png",i=n.div`
+import{s as n,j as e}from"./index-1e8f967c.js";const i="/assets/mountain-backdrop-9368d073.png",o=n.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 100%;
-  background-image: ${`url(${o})`};
+  background-image: ${`url(${i})`};
   background:
     linear-gradient(0deg, rgba(0, 0, 0, 0.46) 0%, rgba(0, 0, 0, 0.46) 100%),
-    url(${o}),
+    url(${i}),
     lightgray 0px -65.191px / 100% 178.109% no-repeat;
   background-size: cover;
   background-repeat: no-repeat;
+  padding-left: 24px;
+  padding-right: 24px;
 `,r=n.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 480px;
+  max-width: 480px;
 `,a=n.h1`
   color: ${({theme:t})=>t.text.white};
   font-size: 36px;
@@ -34,7 +36,7 @@ import{s as n,j as e}from"./index-edd046a0.js";const o="/assets/mountain-backdro
   line-height: 24px;
   font-style: normal;
   font-weight: 500;
-`,s=n.button`
+`,d=n.button`
   background-color: ${({theme:t})=>t.button.primary};
   border-radius: 5px;
   width: 100%;
@@ -46,4 +48,4 @@ import{s as n,j as e}from"./index-edd046a0.js";const o="/assets/mountain-backdro
   font-style: normal;
   font-weight: 700;
   line-height: 31.662px;
-`,g=()=>e.jsx(i,{children:e.jsxs(r,{children:[e.jsx(a,{children:"You got the travel plans, we got the travel vans."}),e.jsx(l,{children:"Add adventure to your life by joining the #vanlife movement. Rent the perfect van to make your perfect road trip."}),e.jsx(s,{children:"Find your van"})]})});export{g as default};
+`,s=()=>e.jsx(o,{children:e.jsxs(r,{children:[e.jsx(a,{children:"You got the travel plans, we got the travel vans."}),e.jsx(l,{children:"Add adventure to your life by joining the #vanlife movement. Rent the perfect van to make your perfect road trip."}),e.jsx(d,{children:"Find your van"})]})});export{s as default};

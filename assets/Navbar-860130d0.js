@@ -1,4 +1,4 @@
-import{s as n,L as o,j as e,r as s}from"./index-edd046a0.js";const i="/assets/van-life-logo-f07bda1c.png",r=n(o)`
+import{s as n,L as o,j as e,r as s}from"./index-1e8f967c.js";const i="/assets/van-life-logo-f07bda1c.png",r=n(o)`
   font-size: 16px;
   text-decoration: none;
   margin-left: 16px;
