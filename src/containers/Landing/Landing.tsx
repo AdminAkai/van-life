@@ -3,7 +3,7 @@ import { FC } from 'react'
 import { LandingPageContainer } from './styledComponents'
 
 const Landing: FC = () => {
-  return <LandingPageContainer></LandingPageContainer>
+  return <LandingPageContainer>Landing Test</LandingPageContainer>
 }
 
 export default Landing
