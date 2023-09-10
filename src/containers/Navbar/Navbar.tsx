@@ -1,13 +1,21 @@
 import { FC } from 'react'
-import { Link } from 'react-router-dom'
 
-import { NavbarContainer } from './styledComponents'
+import VanLifeLogo from 'src/assets/images/logog.png'
+
+import NavbarOption from 'src/components/NavbarOption'
+
+import { NavbarContainer, Logo, NavbarOptions } from './styledComponents'
+import { allNavbarOptions } from './lib'
 
 const Navbar: FC = () => {
   return (
     <NavbarContainer>
-      <Link to="/">Home</Link>
-      <Link to="/about">About</Link>
+      <Logo src={VanLifeLogo} />
+      <NavbarOptions>
+        {allNavbarOptions.map((option, i) => (
+          <NavbarOption {...option} key={`${i}-${option.label}`} />
+        ))}
+      </NavbarOptions>
     </NavbarContainer>
   )
 }

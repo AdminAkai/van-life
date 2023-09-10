@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { ThemeProvider } from 'styled-components'
 
 import Landing from 'src/containers/Landing'
 import About from 'src/containers/About'
@@ -6,8 +7,9 @@ import Navbar from 'src/containers/Navbar'
 
 import 'src/assets/fonts/Inter/static/stylesheet.css'
 
+import theme from 'src/theme'
+
 import './App.css'
-import { ThemeProvider } from 'styled-components'
 
 function App() {
   return (
