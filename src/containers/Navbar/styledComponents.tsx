@@ -11,6 +11,7 @@ export const NavbarContainer = styled.nav`
 
 export const Logo = styled.img`
   height: 26px;
+  cursor: pointer;
 `
 
 export const NavbarOptions = styled.div`
