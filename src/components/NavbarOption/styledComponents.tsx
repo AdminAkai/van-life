@@ -1,10 +1,24 @@
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 
-export const CustomLink = styled(Link)`
+export const NavbarOptionContainer = styled.div`
+  margin-left: 16px;
+`
+
+export const CustomLink = styled(Link)<{ $isActive: boolean }>`
+  &:after {
+    display: block;
+    content: '';
+    border-bottom: 2px solid ${({ theme }) => theme.text.gray};
+    transform: ${({ $isActive }) => ($isActive ? 'scaleX(1)' : 'scaleX(0)')};
+    transition: transform 0.2s ease-in-out;
+  }
+
+  &:hover:after {
+    transform: scaleX(1);
+  }
   font-size: 16px;
   text-decoration: none;
-  margin-left: 16px;
   color: ${({ theme }) => theme.text.gray};
   text-align: right;
   font-size: 16px;

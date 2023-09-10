@@ -1,14 +1,25 @@
-import { FC } from 'react'
+import { FC, memo } from 'react'
 
-import { CustomLink } from './styledComponents'
+import { NavbarOptionContainer, CustomLink } from './styledComponents'
+import { useLocation } from 'react-router-dom'
 
 interface INavbarOptionProps {
   label: string
   route: string
 }
 
-const NavbarOption: FC<INavbarOptionProps> = ({ label, route }) => (
-  <CustomLink to={route}>{label}</CustomLink>
-)
+const NavbarOption: FC<INavbarOptionProps> = ({ label, route }) => {
+  const { pathname } = useLocation()
 
-export default NavbarOption
+  return (
+    <NavbarOptionContainer>
+      <CustomLink $isActive={pathname === route} to={route}>
+        {label}
+      </CustomLink>
+    </NavbarOptionContainer>
+  )
+}
+
+const MemoizedOption = memo(NavbarOption)
+
+export default MemoizedOption
