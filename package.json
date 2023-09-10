@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://github.com/AdminAkai/van-life.git",
+  "homepage": "https://adminakai.github.io/van-life/",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
