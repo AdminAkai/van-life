@@ -8,7 +8,7 @@
     "plugin:@typescript-eslint/recommended",
     "plugin:react/recommended",
     "plugin:react/jsx-runtime",
-    "prettier"
+    "plugin:prettier/recommended"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
@@ -20,8 +20,8 @@
       "version": "detect"
     }
   },
-  "plugins": ["@typescript-eslint", "react", "react-hooks"],
-  "ignorePatterns": ["**/*.css"],
+  "plugins": ["@typescript-eslint", "react", "react-hooks", "prettier"],
+  "ignorePatterns": ["**/*.css", "dist", "node_modules"],
   "rules": {
     "indent": ["error", 2],
     "linebreak-style": ["error", "unix"],
@@ -34,7 +34,7 @@
     ],
     "@typescript-eslint/no-explicit-any": "off",
     "react/display-name": "off",
-    "jsx-quotes": "error",
+    "jsx-quotes": ["error", "prefer-single"],
     "semi": ["error", "never"]
   }
 }

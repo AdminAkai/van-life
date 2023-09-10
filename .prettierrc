@@ -4,6 +4,6 @@
   "semi": false,
   "singleQuote": true,
   "jsxSingleQuote": true,
-  "proseWrap": "always",
+  "printWidth": 80,
   "endOfLine": "lf"
 }

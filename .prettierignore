@@ -1,7 +1,13 @@
 # Ignore artifacts:
-build
+dist
 coverage
 
 # Ignore all HTML and CSS files:
 **/*.html
 **/*.css
+
+# Defaults
+**/.git
+**/.svn
+**/.hg
+**/node_modules

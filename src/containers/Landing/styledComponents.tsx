@@ -16,6 +16,8 @@ export const LandingPageContainer = styled.div`
     lightgray 0px -65.191px / 100% 178.109% no-repeat;
   background-size: cover;
   background-repeat: no-repeat;
+  padding-left: 24px;
+  padding-right: 24px;
 `
 
 export const LandingPageCenter = styled.div`
@@ -23,7 +25,7 @@ export const LandingPageCenter = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 480px;
+  max-width: 480px;
 `
 
 export const LandingTitle = styled.h1`
