@@ -7,11 +7,19 @@ export const NavbarContainer = styled.nav`
   width: 100%;
   background-color: ${({ theme }) => theme.background.primary};
   padding: 2.25rem 1.625rem;
+
+  @media screen and (max-width: 700px) {
+    flex-direction: column;
+  }
 `
 
 export const Logo = styled.img`
   height: 1.625rem;
   cursor: pointer;
+
+  @media screen and (max-width: 700px) {
+    margin-bottom: 1rem;
+  }
 `
 
 export const NavbarOptions = styled.div`
