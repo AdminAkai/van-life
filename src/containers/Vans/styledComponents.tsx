@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const AboutContainer = styled.div`
+export const VansContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;

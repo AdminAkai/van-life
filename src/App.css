@@ -1,8 +1,3 @@
-html {
-  width: 100%;
-  height: 100%;
-}
-
 /*
   1. Use a more-intuitive box-sizing model.
 */
@@ -26,8 +21,6 @@ html {
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-  width: 100%;
-  height: 100%;
 }
 /*
   5. Improve media defaults
@@ -67,10 +60,4 @@ h6 {
 #root,
 #__next {
   isolation: isolate;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
 }

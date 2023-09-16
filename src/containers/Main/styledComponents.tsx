@@ -10,8 +10,7 @@ export const MainContainer = styled.div`
   background-color: ${({ theme }) => theme.primary};
   transition: background-color 0.3s ease;
 
-  @media screen and (max-width: ${({ theme }) => theme.mobileMediaQuery}) {
+  @media screen and (max-width: 700px) {
     width: 100%;
-    height: auto;
   }
 `

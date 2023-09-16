@@ -4,6 +4,7 @@ import { ThemeProvider } from 'styled-components'
 import Landing from 'src/containers/Landing'
 import About from 'src/containers/About'
 import Main from 'src/containers/Main'
+import Vans from 'src/containers/Vans'
 
 import 'src/assets/fonts/Inter/static/stylesheet.css'
 
@@ -19,7 +20,7 @@ function App() {
           <Route path='/' element={<Main />}>
             <Route index element={<Landing />} />
             <Route path='/about' element={<About />} />
-            <Route path='/vans' element={<About />} />
+            <Route path='/vans' element={<Vans />} />
           </Route>
         </Routes>
       </BrowserRouter>
