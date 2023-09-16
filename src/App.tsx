@@ -3,9 +3,7 @@ import { ThemeProvider } from 'styled-components'
 
 import Landing from 'src/containers/Landing'
 import About from 'src/containers/About'
-
-import Navbar from 'src/components/Navbar'
-import Footer from 'src/components/Footer'
+import Main from 'src/containers/Main'
 
 import 'src/assets/fonts/Inter/static/stylesheet.css'
 
@@ -17,12 +15,12 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <BrowserRouter>
-        <Navbar />
         <Routes>
-          <Route path='/' element={<Landing />} />
-          <Route path='/about' element={<About />} />
+          <Route path='/' element={<Main />}>
+            <Route index element={<Landing />} />
+            <Route path='/about' element={<About />} />
+          </Route>
         </Routes>
-        <Footer />
       </BrowserRouter>
     </ThemeProvider>
   )
