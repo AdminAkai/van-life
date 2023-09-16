@@ -3,8 +3,9 @@ import { ThemeProvider } from 'styled-components'
 
 import Landing from 'src/containers/Landing'
 import About from 'src/containers/About'
-import Navbar from 'src/containers/Navbar'
-import Footer from 'src/containers/Footer'
+
+import Navbar from 'src/components/Navbar'
+import Footer from 'src/components/Footer'
 
 import 'src/assets/fonts/Inter/static/stylesheet.css'
 

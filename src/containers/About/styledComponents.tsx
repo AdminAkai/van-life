@@ -6,7 +6,6 @@ export const AboutContainer = styled.div`
   justify-content: flex-start;
   align-items: center;
   width: 100%;
-  height: 100%;
   background-color: ${({ theme }) => theme.background.primary};
 `
 
@@ -17,7 +16,7 @@ export const AboutImageContainer = styled.div`
 
 export const AboutImage = styled.img`
   max-width: 100%;
-  height: 240px;
+  height: 15rem;
   margin: 0 auto;
   object-fit: cover;
 `
@@ -27,32 +26,32 @@ export const AboutText = styled.div`
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 36px 24px;
+  padding: 2.25rem 1.5rem;
 `
 
 export const AboutMessage = styled.h1`
   color: ${({ theme }) => theme.black};
-  font-size: 32px;
+  font-size: 2rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 38px;
-  max-width: 480px;
+  line-height: 2.375rem;
+  max-width: 30rem;
 `
 
 export const AboutMission = styled.p`
   color: ${({ theme }) => theme.black};
-  max-width: 480px;
-  font-size: 16px;
+  max-width: 30rem;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 500;
-  line-height: 22px;
-  margin-top: 24px;
+  line-height: 1.375rem;
+  margin-top: 1.5rem;
 `
 
 export const AboutCallToAction = styled.div`
   width: 100%;
-  padding: 24px;
-  margin-top: 36px;
+  padding: 1.5rem;
+  margin-top: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -62,21 +61,21 @@ export const AboutCallToAction = styled.div`
 `
 export const AboutCallToActionText = styled.h3`
   color: #161616;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 30px;
+  line-height: 1.875rem;
 `
 
 export const AboutCallToActionButton = styled.button`
   border-radius: 5px;
   background-color: ${({ theme }) => theme.black};
   color: ${({ theme }) => theme.text.white};
-  font-size: 15.946px;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 23.919px;
-  margin-top: 24px;
-  padding: 12px 22px;
+  line-height: 1.5rem;
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.375rem;
   border-style: none;
 `

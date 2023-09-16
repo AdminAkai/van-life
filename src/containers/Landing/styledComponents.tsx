@@ -16,8 +16,8 @@ export const LandingPageContainer = styled.div`
     lightgray 0px -65.191px / 100% 178.109% no-repeat;
   background-size: cover;
   background-repeat: no-repeat;
-  padding-left: 24px;
-  padding-right: 24px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 `
 
 export const LandingPageCenter = styled.div`
@@ -25,25 +25,25 @@ export const LandingPageCenter = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 480px;
+  max-width: 30rem;
 `
 
 export const LandingTitle = styled.h1`
   color: ${({ theme }) => theme.text.white};
-  font-size: 36px;
+  font-size: 2.25rem;
   font-style: normal;
-  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
   text-align: left;
-  line-height: 42px;
+  line-height: 2.625rem;
   font-weight: 800;
 `
 
 export const LandingSubtitle = styled.h3`
   color: #fff;
-  font-size: 16px;
-  margin-bottom: 56px;
+  font-size: 1rem;
+  margin-bottom: 3.25rem;
   text-align: left;
-  line-height: 24px;
+  line-height: 1.5rem;
   font-style: normal;
   font-weight: 500;
 `
@@ -52,12 +52,12 @@ export const LandingButton = styled.button`
   background-color: ${({ theme }) => theme.button.primary};
   border-radius: 5px;
   width: 100%;
-  height: 48px;
+  height: 3rem;
   border-style: none;
   color: ${({ theme }) => theme.text.white};
   text-align: center;
-  font-size: 15.946px;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 31.662px;
+  line-height: 2rem;
 `

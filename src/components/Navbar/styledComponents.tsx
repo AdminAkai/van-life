@@ -6,11 +6,11 @@ export const NavbarContainer = styled.nav`
   align-items: center;
   width: 100%;
   background-color: ${({ theme }) => theme.background.primary};
-  padding: 36px 26px;
+  padding: 2.25rem 1.625rem;
 `
 
 export const Logo = styled.img`
-  height: 26px;
+  height: 1.625rem;
   cursor: pointer;
 `
 
