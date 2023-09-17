@@ -1,7 +1,13 @@
 import { FC } from 'react'
 
-import { VansContainer } from './styledComponents'
+import { VansContainer, VansHeader } from './styledComponents'
 
-const Vans: FC = () => <VansContainer></VansContainer>
+const Vans: FC = () => {
+  return (
+    <VansContainer>
+      <VansHeader>Explore our van options</VansHeader>
+    </VansContainer>
+  )
+}
 
 export default Vans

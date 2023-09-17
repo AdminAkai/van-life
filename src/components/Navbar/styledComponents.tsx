@@ -6,9 +6,9 @@ export const NavbarContainer = styled.nav`
   align-items: center;
   width: 100%;
   background-color: ${({ theme }) => theme.background.primary};
-  padding: 2.25rem 1.625rem;
+  padding: 2rem 1.5rem;
 
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 350px) {
     flex-direction: column;
   }
 `
