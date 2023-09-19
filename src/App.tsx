@@ -8,9 +8,13 @@ import Vans from 'src/containers/Vans'
 
 import 'src/assets/fonts/Inter/static/stylesheet.css'
 
+import * as server from 'src/server'
+
 import theme from 'src/theme'
 
 import './App.css'
+
+server
 
 function App() {
   return (

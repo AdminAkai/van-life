@@ -1,6 +1,15 @@
 import { Model, createServer } from 'miragejs'
 
-createServer({
+export interface IVanType {
+    id: string
+    name: string
+    price: number
+    description: string
+    imageUrl: string
+    type: string
+}
+
+export default createServer({
   models: {
     vans: Model,
   },

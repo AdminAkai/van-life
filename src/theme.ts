@@ -15,8 +15,9 @@ interface IText {
 
 interface IButton {
   primary: '#FF8C38'
-  secondary: '#E17654'
+  orange: '#E17654'
   green: '#115E59'
+  black: '#161616'
 }
 
 interface ITheme {
@@ -43,8 +44,9 @@ const theme: ITheme = {
   },
   button: {
     primary: '#FF8C38',
-    secondary: '#E17654',
+    orange: '#E17654',
     green: '#115E59',
+    black: '#161616',
   },
 }
 

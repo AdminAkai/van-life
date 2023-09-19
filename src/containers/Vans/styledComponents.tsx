@@ -26,3 +26,11 @@ export const VansHeader = styled.h1`
     min-height: 100%;
   }
 `
+
+export const VansList = styled.ul`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+`
