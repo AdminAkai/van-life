@@ -5,6 +5,7 @@ import { IVanType } from 'src/server'
 
 import { VansContainer, VansHeader, VansList } from './styledComponents'
 import ProductCard from 'src/components/ProductCard'
+import Filter from 'src/components/Filter'
 
 const Vans: FC = () => {
   const [data, setData] = useState<IVanType[]>([])
@@ -25,6 +26,7 @@ const Vans: FC = () => {
   return (
     <VansContainer>
       <VansHeader>Explore our van options</VansHeader>
+      <Filter />
       <VansList>
         {data.map((van, i) => (
           <ProductCard key={`${van.name} - ${van.id}`} {...van} index={i} />

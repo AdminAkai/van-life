@@ -1,7 +1,8 @@
 export const grabColor = (type: string): string => {
   if (type === 'simple') return 'orange'
   if (type === 'rugged') return 'green'
-  return 'black'
+  if (type === 'luxury') return 'black'
+  return 'tan'
 }
 
 export enum LabelEnum {

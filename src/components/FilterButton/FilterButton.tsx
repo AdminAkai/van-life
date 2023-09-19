@@ -5,10 +5,11 @@ import { FilterButtonContainer } from './styledComponents'
 
 interface IFilterButtonProps {
   type: string
+  filter?: boolean
 }
 
-const FilterButton: FC<IFilterButtonProps> = ({ type }) => (
-  <FilterButtonContainer type={type}>
+const FilterButton: FC<IFilterButtonProps> = ({ type, filter }) => (
+  <FilterButtonContainer type={type} filter={filter}>
     {readableLabels[type]}
   </FilterButtonContainer>
 )

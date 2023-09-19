@@ -37,18 +37,18 @@ export const ProductDetails = styled.div`
 `
 
 export const ProductDetail = styled.h1`
-  font-size: 1rem;
+  font-size: 1.25rem;
 
   @media screen and (max-width: 700px) {
-    font-size: 0.75rem;
+    font-size: 1rem;
   }
 `
 
 export const ProductPrice = styled.h1`
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: 500;
 
   @media screen and (max-width: 700px) {
-    font-size: 0.6rem;
+    font-size: 0.8rem;
   }
 `

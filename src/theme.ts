@@ -18,6 +18,7 @@ interface IButton {
   orange: '#E17654'
   green: '#115E59'
   black: '#161616'
+  tan: '#FFEAD0'
 }
 
 interface ITheme {
@@ -47,6 +48,7 @@ const theme: ITheme = {
     orange: '#E17654',
     green: '#115E59',
     black: '#161616',
+    tan: '#FFEAD0',
   },
 }
 
