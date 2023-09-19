@@ -9,24 +9,28 @@ import {
   ProductDetail,
   ProductDetails,
   ProductImage,
+  ProductPrice,
 } from './styledComponent'
 
-interface IProductCardProps extends IVanType {}
+interface IProductCardProps extends IVanType {
+  index: number
+}
 
 const ProductCard: FC<IProductCardProps> = ({
   name,
   price,
   imageUrl,
   type,
+  index,
 }) => {
   return (
-    <ProductCardContainer>
+    <ProductCardContainer $first={index === 0}>
       <ProductImage src={imageUrl} />
       <ProductDetails>
         <ProductDetail>{name}</ProductDetail>
         <ProductDetail>
           ${price}
-          <span style={{ fontSize: '0.8rem', fontWeight: 500 }}>/day</span>
+          <ProductPrice>/day</ProductPrice>
         </ProductDetail>
       </ProductDetails>
       <FilterButton type={type} />

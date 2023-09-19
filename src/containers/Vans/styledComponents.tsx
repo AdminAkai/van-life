@@ -23,14 +23,19 @@ export const VansHeader = styled.h1`
   @media screen and (max-width: 700px) {
     font-size: 1.5rem;
     width: 100%;
-    min-height: 100%;
   }
 `
 
 export const VansList = styled.ul`
   width: 100%;
+  padding: 0px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
+
+  @media screen and (max-width: 700px) {
+    font-size: 1.5rem;
+    width: 100%;
+  }
 `

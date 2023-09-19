@@ -26,8 +26,8 @@ const Vans: FC = () => {
     <VansContainer>
       <VansHeader>Explore our van options</VansHeader>
       <VansList>
-        {data.map((van) => (
-          <ProductCard key={`${van.name} - ${van.id}`} {...van} />
+        {data.map((van, i) => (
+          <ProductCard key={`${van.name} - ${van.id}`} {...van} index={i} />
         ))}
       </VansList>
     </VansContainer>
