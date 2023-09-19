@@ -13,7 +13,7 @@ const NavbarOption: FC<INavbarOptionProps> = ({ label, route }) => {
 
   return (
     <NavbarOptionContainer>
-      <CustomLink $isActive={pathname === route} to={route}>
+      <CustomLink $isActive={pathname === route} to={route} aria-label={label}>
         {label}
       </CustomLink>
     </NavbarOptionContainer>

@@ -9,8 +9,16 @@ export const FilterContainer = styled.div`
   margin-bottom: 1rem;
 `
 
-export const ClearFilterButton = styled.p`
+export const ClearFilterButton = styled.button`
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  cursor: pointer;
+  user-select: none;
   color: ${({ theme }) => theme.text.gray};
   border-bottom: 1px solid ${({ theme }) => theme.text.gray};
-  font-size: 0.75rem;
+
+  @media screen and (max-width: 700px) {
+    font-size: 0.75rem;
+  }
 `

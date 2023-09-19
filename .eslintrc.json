@@ -8,7 +8,8 @@
     "plugin:@typescript-eslint/recommended",
     "plugin:react/recommended",
     "plugin:react/jsx-runtime",
-    "plugin:prettier/recommended"
+    "plugin:prettier/recommended",
+    "plugin:jsx-a11y/recommended"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
@@ -18,11 +19,30 @@
   "settings": {
     "react": {
       "version": "detect"
+    },
+    "jsx-a11y": {
+      "components": {
+        "FilterButton": "button",
+        "Filter": "div",
+        "Footer": "footer",
+        "Navbar": "nav",
+        "NavbarOption": "a",
+        "ProductCard": "div"
+      }
     }
   },
   "plugins": ["@typescript-eslint", "react", "react-hooks", "prettier"],
   "ignorePatterns": ["**/*.css", "dist", "node_modules"],
   "rules": {
+    "jsx-a11y/anchor-is-valid": [
+      "error",
+      {
+        "components": ["Link"],
+        "specialLink": ["hrefLeft", "hrefRight", "to"],
+        "aspects": ["noHref", "invalidHref", "preferButton"]
+      }
+    ],
+    "jsx-a11y/anchor-has-content": 0,
     "linebreak-style": ["error", "unix"],
     "quotes": [
       "error",
