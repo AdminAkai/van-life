@@ -12,4 +12,5 @@ export const FilterContainer = styled.div`
 export const ClearFilterButton = styled.p`
   color: ${({ theme }) => theme.text.gray};
   border-bottom: 1px solid ${({ theme }) => theme.text.gray};
+  font-size: 0.75rem;
 `

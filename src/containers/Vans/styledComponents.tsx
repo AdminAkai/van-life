@@ -37,5 +37,6 @@ export const VansList = styled.ul`
   @media screen and (max-width: 700px) {
     font-size: 1.5rem;
     width: 100%;
+    justify-content: space-between;
   }
 `

@@ -22,8 +22,8 @@ export const ProductImage = styled.img`
   width: 15rem;
 
   @media screen and (max-width: 700px) {
-    height: 8rem;
-    width: 8rem;
+    height: 9rem;
+    width: 9rem;
   }
 `
 
@@ -40,7 +40,7 @@ export const ProductDetail = styled.h1`
   font-size: 1.25rem;
 
   @media screen and (max-width: 700px) {
-    font-size: 1rem;
+    font-size: 0.75rem;
   }
 `
 
@@ -49,6 +49,6 @@ export const ProductPrice = styled.h1`
   font-weight: 500;
 
   @media screen and (max-width: 700px) {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
 `

@@ -22,6 +22,8 @@ export const FilterButtonContainer = styled.button<{
   }
 
   @media screen and (max-width: 700px) {
-    padding: 0.25rem rem;
+    padding: 0.25rem 1rem;
+    font-size: 0.75rem;
+    margin-right: 1rem;
   }
 `
